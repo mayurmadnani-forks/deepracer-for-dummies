@@ -1,6 +1,7 @@
 FROM python:3.7.3-stretch
 
 # install docker
+RUN chmod 1777 /tmp
 RUN apt-get update
 RUN apt-get -y install apt-transport-https ca-certificates curl gnupg2 software-properties-common
 RUN curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add -
